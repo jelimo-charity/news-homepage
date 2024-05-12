@@ -7,9 +7,10 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
+    /* height: 100vh; */
   }
  /* Navigation styling */
 .navigation {
@@ -39,7 +40,7 @@
   }
   
   .navbar ul li a:hover {
-    color: #007bff;
+    color: hsl(5, 85%, 63%);
   }
   .firstBox{
     display: flex;
@@ -48,17 +49,7 @@
   .sideA{
     height: 300px;
   }
-  .sideB{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    background-color: #000;
-    color: #FFF;
-    height: 400px;
-    margin-left: 30px;
-    padding: 20px;
-  }
+  
   .web3Img{
     height: 250px;
     margin-bottom: 20px;
@@ -70,22 +61,60 @@
     /* align-items: center; */
     
   }
+  .web3Contents h3{
+    font-size: 2rem;
+  }
   .description{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     margin-left: 25px;
   }
+  .description p{
+    font-size: 1.1rem;
+  }
   button{
+    margin-top: 15px;
     width: 100px;
-    padding: 5px;
+    padding: 8px;
+    border: none;
+    /* border-radius: 2px; */
+    background-color: hsl(5, 85%, 63%);
 
+  }
+  .sideB{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #FFF;
+    height: 400px;
+    margin-left: 30px;
+    padding: 20px;
+    width: 450px;
+  }
+.sideB h2{
+   font-size: 2rem;
+   color: hsl(35, 77%, 62%);
+   margin-bottom: 20px;
+  }
+  .item h4{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .item p{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+
+  }
+  hr{
+    margin-bottom: 20px;
   }
   .secondBox{
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 50px;
+    /* padding-right: 10px; */
   }
   .article{
     display: flex;
@@ -95,4 +124,72 @@
     margin-right: 20px;
     height: 50%;
   }
-  
+  .articleContent h5{
+    font-size: 2rem;
+    color:  hsl(233, 8%, 79%);
+    margin-bottom: 5px;
+  }
+  .articleContent h6{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .articleContent h6:hover{
+    color: hsl(5, 85%, 63%);
+  }
+  .articleContent p{
+    color:  hsl(236, 13%, 42%);
+    line-height: 1.2;
+  }
+  hr{
+    color: hsl(233, 8%, 79%);
+  }
+
+
+/* CSS for small screens */
+@media screen and (max-width: 600px) {
+  .container {
+    /* flex-direction: column; */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  .firstBox{
+    /* height: 1500px; */
+    flex-direction: column;
+    width: 100%;
+   
+  }
+  .web3Img{
+    width: 100%;
+  }
+  .web3Contents{
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .description{
+    margin-left: 0;
+  }
+  .sideB{
+    margin-left: 0;
+    width: 100%;
+    margin-top: 250px;
+  }
+  .secondBox{
+    flex-direction: column;
+  }
+  .artImg{
+    height: 150px;
+    margin-top: 20px;
+  }
+  .articleContent{
+    margin-top: 20px;
+  }
+
+ 
+
+}
+
+
+
+
+
+
+ 
